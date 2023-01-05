@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<form method="post">
+    {% csrf_token %}
+
+
+    <div class="container-fluid">
+        <br>
+
+    <div class="shadow card">
+  <div class="card-header">
+   Warninig
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Delete</h5>
+    <p class="card-text">Are You Sure This Task is Done</p>
+    <button type="submit" class="btn btn-outline-danger">Confirm </div>
+</div>
+
+
+</div>
+
+</form>
+
+
+
+
+
+{% endblock %}

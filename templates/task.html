@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<div class="conatiner">
+    <div class="row">
+        <div class="col-md-6">
+            <form method="post" class="p-3 shadow" enctype="multipart/form-data">
+                 {% csrf_token %}
+    <div class="mb-3">
+    <input type="text" name="name" class="form-control"  placeholder="Name of the task">
+    </div>
+
+    <div class="mb-3">
+    <input type="text" name="priority" class="form-control" placeholder="your priority">
+    </div>
+    <input type="submit" class="btn btn-success">
+
+</form>
+
+
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
